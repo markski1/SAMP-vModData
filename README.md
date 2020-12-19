@@ -27,7 +27,7 @@ VehicleSupportsNitro(modelid) | Returns true if the vehicle supports nitrous, fa
 
 Function | Behaviour
 --- | ---
-GetComponentName(cid) | Returns a string containing the name of the given [component](https://open.mp/es/docs/scripting/resources/carcomponentid). You should format the string into another one upon receiving it if you plan to modify it.
+GetComponentName(cid) | Returns a string containing the name of the given [component](https://open.mp/es/docs/scripting/resources/carcomponentid).
 GetComponentPrice(cid) | Returns the single player price of the given [component](https://open.mp/es/docs/scripting/resources/carcomponentid).
 GetComponentSlot(cid) | Returns the [component slot](https://open.mp/es/docs/scripting/resources/Componentslots) where the given [component](https://open.mp/es/docs/scripting/resources/carcomponentid) belongs.
 
