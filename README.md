@@ -6,7 +6,7 @@ Library to obtain information about vehicle components in SA-MP.
 ### If you have vSync
 Make sure to include mrks_vModData AFTER vSync. This way, vModData will re-use certain parts of vSync instead of adding them again, and it'll ensure the best possible compatibility.
 
-### If you don't have y_hooks
+### If you don't have vSync
 Include mrks_vModData anywhere after the base samp includes.
 
 ## Functions and Usage
