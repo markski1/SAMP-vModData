@@ -291,7 +291,7 @@ static const vmd_carmodData[194][vmd_carmodFlags] = {
 	}
 
 	stock VehicleSupportsNitro(modelid) {
-		return (VehicleSupportsComponent(modelid, 1008) || VehicleSupportsComponent(modelid, 1009) || VehicleSupportsComponent(modelid, 1010);
+		return (VehicleSupportsComponent(modelid, 1008) || VehicleSupportsComponent(modelid, 1009) || VehicleSupportsComponent(modelid, 1010));
 	}
 
 #endif
@@ -355,8 +355,8 @@ stock GetComponentPrice(cid) {
 stock GetComponentSlot(cid) {
 	if (!IsValidComponent(cid)) return CARMODTYPE_INVALID;
 	for (new i = 0; i < 194; i++) {
-		if (vmd_carmodData[i][2] == cid) {
-			return vmd_carmodData[i][0];
+		if (vmd_carmodData[i][vmd_carmodFlags:2] == cid) {
+			return vmd_carmodData[i][vmd_carmodFlags:0];
 		}
 	}
 	return CARMODTYPE_INVALID;
