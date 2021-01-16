@@ -1,5 +1,5 @@
 /*
-	mrks_vModData 0.2
+	vModData 0.2
 
 	mrks.cf | github.com/markski1
 
