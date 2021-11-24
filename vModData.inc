@@ -1,7 +1,11 @@
 /*
-	vModData 0.2
+	vModData 0.3
 
 	mrks.cf | github.com/markski1
+	
+	Contributors:
+		markski1
+		Fairuz-Afdhal
 
 	Thanks to:
 		RIDE2DAY - Bullbar definitions from his include vSync.
@@ -353,11 +357,7 @@ stock GetComponentPrice(cid) {
 }
 
 stock GetComponentSlot(cid) {
+	// Thanks to Fairuz-Afdhal for fixing this function.
 	if (!IsValidComponent(cid)) return CARMODTYPE_INVALID;
-	for (new i = 0; i < 194; i++) {
-		if (vmd_carmodData[i][vmd_carmodFlags:2] == cid) {
-			return vmd_carmodData[i][vmd_carmodFlags:0];
-		}
-	}
-	return CARMODTYPE_INVALID;
+	return vmd_carmodData[cid-1000][carmod_type];
 }
