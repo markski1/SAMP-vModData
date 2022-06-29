@@ -1,7 +1,7 @@
 /*
 	vModData 0.3
 
-	mrks.cf | github.com/markski1
+	markski.ar | github.com/markski1
 	
 	Contributors:
 		markski1
